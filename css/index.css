@@ -1,0 +1,164 @@
+
+
+
+.demo{
+	width: 100%!important;
+	/*height: 300px;*/
+	position: relative!important;
+	background: red!important;
+	float: left!important;
+	min-height: 30vw!important;
+  /*background: #110101;*/
+  font-family: "Roboto", sans-serif!important;
+  overflow: hidden!important;
+  display: flex!important;
+  align-items: center!important;
+  justify-content: center!important;
+}
+
+.demo-slideshow {
+  position: absolute!important;
+  z-index: 1!important;
+  top: 0!important;
+  left: 0!important;
+  width: 100vw!important;
+  height: 30vw!important;
+  background: blue!important;
+  overflow: hidden!important;
+}
+.demo .demo-slideshow .demo-slider {
+  width: 100vw!important;
+  min-height: 30vw!important;
+  z-index: 2!important;
+}
+.demo .demo-slideshow .demo-slider * {
+  outline: none!important;
+}
+.demo .demo-slideshow .demo-slider .item {
+  width: 100vw!important;
+  min-height: 30vw!important;
+  position: relative!important;
+  overflow: hidden!important;
+  border: none!important;
+}
+.demo .demo-slideshow .demo-slider .demo-item .demo-text {
+  display: none!important;
+}
+.demo .demo-slideshow .demo-slider .item img {
+  min-width: 101%!important;
+  min-height: 101%!important;
+  position: absolute!important;
+  top: 50%!important;
+  left: 50%!important;
+  -webkit-transform: translate(-50%, -50%)!important;
+  transform: translate(-50%, -50%)!important;
+}
+.demo .demo-slideshow .slick-dots {
+  /*position: fixed;*/
+  z-index: 100!important;
+  width: 40px!important;
+  height: auto!important;
+  bottom: auto!important;
+  top: 50%!important;
+  right: 0!important;
+  -webkit-transform: translateY(-50%)!important;
+  transform: translateY(-50%)!important;
+  left: auto!important;
+  color: #fff!important;
+  display: block!important;
+}
+.demo .demo-slideshow .slick-dots li {
+  display: block!important;
+  width: 100%!important;
+  height: auto!important;
+}
+.demo .demo-slideshow .slick-dots li button {
+  position: relative!important;
+  width: 20px!important;
+  height: 15px!important;
+  text-align: center!important;
+}
+.demo .demo-slideshow .slick-dots li button:before {
+  content: ""!important;
+  background: #fff!important;
+  color: #fff!important;
+  height: 2px!important;
+  width: 20px!important;
+  border-radius: 0!important;
+  position: absolute!important;
+  top: 50%!important;
+  right: 0!important;
+  left: auto!important;
+  -webkit-transform: translateY(-50%)!important;
+  transform: translateY(-50%)!important;
+  transition: all 0.3s ease-in-out!important;
+  opacity: 0.6!important;
+}
+.demo .demo-slideshow .slick-dots li.slick-active button:before {
+  width: 40px!important;
+  opacity: 1!important;
+}
+.demo .slideshow.slideshow-right {
+  left: 0!important;
+  z-index: 1!important;
+  width: 50vw!important;
+  /*background: yellow;*/
+  pointer-events: none!important;
+}
+.demo .slideshow.slideshow-right .slider {
+  left: 0!important;
+  position: absolute!important;
+}
+
+.demo .slideshow-text {
+	background: red!important;
+  position: absolute!important;
+  top: 50%!important;
+  left: 50%!important;
+  -webkit-transform: translate(-50%, -50%)!important;
+  transform: translate(-50%, -50%)!important;
+  z-index: 100!important;
+  font-size: 30px!important;
+  width: 100vw!important;
+  text-align: center!important;
+  color: #fff!important;
+  font-family: "Roboto Condensed", sans-serif!important;
+  font-weight: 100!important;
+  pointer-events: none!important;
+  text-transform: uppercase!important;
+  letter-spacing: 20px!important;
+  line-height: 0.8!important;
+}
+
+.demo .topnav {
+  overflow: hidden!important;
+  background-color: #333!important;
+}
+
+.demo .topnav a {
+  float: left!important;
+  color: #f2f2f2!important;
+  text-align: center!important;
+  padding: 14px 16px!important;
+  text-decoration: none!important;
+  font-size: 17px!important;
+}
+
+.demo .topnav a:hover {
+  background-color: #ddd!important;
+  color: black!important;
+}
+
+.demo .topnav a.active {
+  background-color: #4caf50!important;
+  color: white!important;
+}
+
+.demo .topnav-right {
+  float: right!important;
+}
+@media (max-width: 767px) {
+  .demo .slideshow-text {
+    font-size: 40px!important;
+  }
+}
